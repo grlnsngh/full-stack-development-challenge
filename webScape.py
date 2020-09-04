@@ -26,7 +26,7 @@ for h in soup.findAll('div', attrs={'class':'ng-binding ng-scope'}):
 df = pd.DataFrame({'Questions':questions}) 
 
 #converting dataframe to csv with utf-8-sig encoding to include characters as per requirement
-df.to_csv('questions.csv', index=False, header=False, encoding='utf-8-sig')
+df.to_csv('Gurleen_Singh_FULL_STACK_DEVELOPMENT_CHALLENGE_questions.csv', index=False, header=False, encoding='utf-8-sig')
 
 #choosing random question from the list
 randomQuestion = random.choice(questions)
